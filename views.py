@@ -126,7 +126,7 @@ def getDataByCompetition(competition):
     if competition_table_data.get(competition) is not None:
         for command in competition_table_data[competition]:
             place, score, result = competition_table_data[competition][command]
-            data.append(f'{place} место: Комманда *{command}* - {score}б ({result})')
+            data.append(f'{place} место: Команда *{command}* - {score}б ({result})')
 
     data.sort()
     ans = '\n'.join(data) if len(data) else 'Результатов пока нет'
